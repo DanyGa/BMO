@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub CriptogramasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles criptogramasToolStripMenuItem.Click
-        Dim Ce As New MetodomnsCesar
+        Dim Ce As New MetodomsnAtbash
         Ce.Abrir()
         Me.Close()
     End Sub

@@ -11,9 +11,9 @@ namespace BMO.Atbash
         public String cambio;
         public String ZXY(String codigo)
         {
-            foreach (char a in codigo.ToCharArray()) //METODO PARA TRANSFORMAR STRING EN ARREGLO DE CHAR
+            foreach (char a in codigo.ToCharArray()) 
             {
-                cambio += (char)(-1 * a + 155);               //ENCAPSULAMIRNTO               
+                cambio += (char)(-1 * a + 155);
             }
             return cambio;
         }

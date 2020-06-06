@@ -23,7 +23,6 @@ Partial Class frmAtbash
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAtbash))
-        Me.lblInstrucciones = New System.Windows.Forms.Label()
         Me.txtPalabras = New System.Windows.Forms.TextBox()
         Me.txtResultados = New System.Windows.Forms.TextBox()
         Me.txtEncriptadas = New System.Windows.Forms.ListBox()
@@ -37,15 +36,6 @@ Partial Class frmAtbash
         Me.mnsAtbash.SuspendLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblInstrucciones
-        '
-        Me.lblInstrucciones.Font = New System.Drawing.Font("Britannic Bold", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInstrucciones.Location = New System.Drawing.Point(282, 84)
-        Me.lblInstrucciones.Name = "lblInstrucciones"
-        Me.lblInstrucciones.Size = New System.Drawing.Size(221, 18)
-        Me.lblInstrucciones.TabIndex = 30
-        Me.lblInstrucciones.Text = "USAR LETRAS EN MAYUSCULA"
         '
         'txtPalabras
         '
@@ -100,20 +90,20 @@ Partial Class frmAtbash
         Me.mnsAtbash.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.criptogramasToolStripMenuItem, Me.salirToolStripMenuItem})
         Me.mnsAtbash.Location = New System.Drawing.Point(0, 0)
         Me.mnsAtbash.Name = "mnsAtbash"
-        Me.mnsAtbash.Size = New System.Drawing.Size(800, 28)
+        Me.mnsAtbash.Size = New System.Drawing.Size(800, 30)
         Me.mnsAtbash.TabIndex = 37
         Me.mnsAtbash.Text = "menuStrip1"
         '
         'criptogramasToolStripMenuItem
         '
         Me.criptogramasToolStripMenuItem.Name = "criptogramasToolStripMenuItem"
-        Me.criptogramasToolStripMenuItem.Size = New System.Drawing.Size(59, 24)
+        Me.criptogramasToolStripMenuItem.Size = New System.Drawing.Size(59, 26)
         Me.criptogramasToolStripMenuItem.Text = "Cesar"
         '
         'salirToolStripMenuItem
         '
         Me.salirToolStripMenuItem.Name = "salirToolStripMenuItem"
-        Me.salirToolStripMenuItem.Size = New System.Drawing.Size(52, 24)
+        Me.salirToolStripMenuItem.Size = New System.Drawing.Size(52, 26)
         Me.salirToolStripMenuItem.Text = "Salir"
         '
         'pictureBox1
@@ -143,7 +133,6 @@ Partial Class frmAtbash
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lblBMO)
-        Me.Controls.Add(Me.lblInstrucciones)
         Me.Controls.Add(Me.txtPalabras)
         Me.Controls.Add(Me.txtResultados)
         Me.Controls.Add(Me.txtEncriptadas)
@@ -162,8 +151,6 @@ Partial Class frmAtbash
         Me.PerformLayout()
 
     End Sub
-
-    Private WithEvents lblInstrucciones As Label
     Private WithEvents txtPalabras As TextBox
     Private WithEvents txtResultados As TextBox
     Private WithEvents txtEncriptadas As ListBox

@@ -79,13 +79,19 @@
     <Compile Include="Atbash\frmAtbash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Atbash\MetodoAtbash.vb" />
+    <Compile Include="Atbash\MetodomsnAtbash.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cesar\frmCesar.Designer.vb">
       <DependentUpon>frmCesar.vb</DependentUpon>
     </Compile>
     <Compile Include="Cesar\frmCesar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cesar\MetodoCesar.vb" />
+    <Compile Include="Cesar\MetodoCesar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cesar\MetodomnsCesar.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Atbash\frmAtbash.resx">
+      <DependentUpon>frmAtbash.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cesar\frmCesar.resx">
       <DependentUpon>frmCesar.vb</DependentUpon>
     </EmbeddedResource>
